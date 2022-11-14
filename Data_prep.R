@@ -2,6 +2,7 @@
 
 FAO_land_use <- read.csv("C:/Users/mpersson/Box/Land-balance & deforestation emissions model/Data/Global/Inputs_LandUse_E_All_Data_(Normalized).csv", sep = ",", stringsAsFactors = FALSE)                    # FAOSTAT Land Use data, downlaoded from http://www.fao.org/faostat/en/#data/RL (retrieved 20211007; data update 20210719)
 FAO_crops_livestock <- read.csv("C:/Users/mpersson/Box/Land-balance & deforestation emissions model/Data/Global/Production_Crops_Livestock_E_All_Data_(Normalized).csv", sep = ",", stringsAsFactors = FALSE) # FAOSTAT livestock primary data, downlaoded from http://www.fao.org/faostat/en/#data/QCL (retrieved 20211007; data update 20210915)
+Country_groups <- read.csv("Country_lookup.csv", sep = ",", stringsAsFactors = FALSE)                                                                                                                         # Data key for country ISO codes
 
 FAO_area_data <- rbind(
                     filter(
@@ -13,6 +14,8 @@ FAO_area_data <- rbind(
                        Year == 2018 & Element == "Area harvested"
                     ) 
                   ) %>%
-                  mutate(Value = ifelse(Item == "Land under perm. meadows and pastures", Value * 1000, Value)) # Converting pasture area to ha, as it is given in 1,000 ha in the FAOSTAT land use database
+                  mutate(Value = ifelse(Item == "Land under perm. meadows and pastures", Value * 1000, Value)) %>% # Converting pasture area to ha, as it is given in 1,000 ha in the FAOSTAT land use database
+                  mutate(Item = ifelse(Item == "Land under perm. meadows and pastures", "Cattle meat", Item)) %>%
+                  left_join(., select(Country_groups, CountryCode, ISO), by = c("Area.Code" = "CountryCode"))
 
 write.csv(FAO_area_data, "FAO_area_data.csv")

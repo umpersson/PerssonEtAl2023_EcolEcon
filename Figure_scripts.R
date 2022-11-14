@@ -2,10 +2,22 @@
 
 Def_attrib <- read.csv("Deforestation_attribution_sheet.csv", sep = ",", stringsAsFactors = FALSE) # Loads data on deforestation attribution to commodities from Pendrill et al. (2022)
 Kastner_trade <- read.csv("Kastner_sheet.csv", sep = ",", stringsAsFactors = FALSE)                # Loads data on bilateral trade flows of embodied deforestation from Pendrill et al. (2022)
+LU_area_data <- read.csv("FAO_area_data.csv", sep = ",", stringsAsFactors = FALSE)                 # Loads data on pasture extent and area harvested by commodity, for year 2018, from FAOSTAT (2021)
 Crop_groups <- read.csv("Crop_lookup.csv", sep = ",", stringsAsFactors = FALSE)                    # Loads data key to summarize individual crop data into aggregate crop groups
-Country_groups <- read.csv("Country_lookup.csv", sep = ",", stringsAsFactors = FALSE)                 # Loads data key to summarize individual country data into aggregate regions
+Country_groups <- read.csv("Country_lookup.csv", sep = ",", stringsAsFactors = FALSE)              # Loads data key to summarize individual country data into aggregate regions
 
 # Create a dataframe with the share of 2018 harvested area 
+Area_shares <- select(Def_attrib, ISO, Commodity, Year, Def_attr_ha) %>%
+  filter(Commodity != "Forest plantation") %>%
+  group_by(ISO, Commodity) %>%
+  mutate (CumDef = rev(cumsum(rev(Def_attr_ha)))) %>% # Calculate the cumulative sum of deforestation in reveres order - i.e., the amount of land use for a given commodity deforested before a given year
+  ungroup() %>%
+  left_join(., select(LU_area_data, ISO, Item, Value), by = c("ISO" = "ISO", "Commodity" = "Item")) %>%
+  left_join(., select(Crop_groups, FAO_name, CropGroup), by = c("Commodity" = "FAO_name")) %>%
+  select(ISO, CropGroup, Year, CumDef, Value) %>%
+  group_by(ISO, CropGroup, Year) %>%
+  summarise_all(sum, na.rm = TRUE) %>%
+  mutate(DefShare = CumDef / Value)
 
 # Create a dataframe with domestic & export volumes, export shares, by country, commodity group & year
 Dom_exp_shares <- select(Kastner_trade, ProducerCountry, ConsumerCountry, FAO_name, Year, Deforestation_Area) %>%
