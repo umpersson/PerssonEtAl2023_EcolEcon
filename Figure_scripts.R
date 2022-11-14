@@ -10,8 +10,9 @@ library(readxl)
 # LOAD & PREPARE DATA ##########################################################
 
 Def_attrib <- read.csv("Deforestation_attribution_sheet.csv", sep = ",", stringsAsFactors = FALSE) # Loads data on deforestation attribution to commodities from Pendrill et al. (2022)
-Crop_groups <- read_excel("C:/Users/mpersson/Box/My folders/Trade & environment/Changing landscape - EE Special Issue '22/R script & output/Lookup_tables.xlsx", sheet = "Crops_lookup")
-Country_groups <- read_excel("C:/Users/mpersson/Box/My folders/Trade & environment/Changing landscape - EE Special Issue '22/R script & output//Lookup_tables.xlsx", sheet = "Country_lookup")
+Kastner_trade <- read.csv("Kastner_sheet.csv", sep = ",", stringsAsFactors = FALSE)                # Loads data on bilateral trade flows of embodied deforestation from Pendrill et al. (2022)
+Crop_groups <- read.csv("Crop_lookup.csv", sep = ",", stringsAsFactors = FALSE)                    # Loads data key to summarize individual crop data into aggregate crop groups
+Country_groups <- read.csv("Crop_lookup.csv", sep = ",", stringsAsFactors = FALSE)                 # Loads data key to summarize individual country data into aggregate regions
 
 
 # Create a dataframe with domestic & export volumes, export shares, by country, commodity group & year

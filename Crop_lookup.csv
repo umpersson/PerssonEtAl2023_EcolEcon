@@ -1,0 +1,194 @@
+FAO_name,FAO item code,Subcategory,Environmental extension,EXIOBASE product code,CropGroup
+"Rice, paddy",27,Paddy rice,Paddy rice,p01.a,Paddy rice
+Wheat,15,Wheat,Wheat,p01.b,Cereal grains nec
+Barley,44,Cereal grains nec,Cereal grains nec,p01.c,Cereal grains nec
+Maize,56,Cereal grains nec,Cereal grains nec,p01.c,Cereal grains nec
+Popcorn,68,Cereal grains nec,Cereal grains nec,p01.c,Cereal grains nec
+Rye,71,Cereal grains nec,Cereal grains nec,p01.c,Cereal grains nec
+Oats,75,Cereal grains nec,Cereal grains nec,p01.c,Cereal grains nec
+Millet,79,Cereal grains nec,Cereal grains nec,p01.c,Cereal grains nec
+Sorghum,83,Cereal grains nec,Cereal grains nec,p01.c,Cereal grains nec
+Buckwheat,89,Cereal grains nec,Cereal grains nec,p01.c,Cereal grains nec
+Quinoa,92,Cereal grains nec,Cereal grains nec,p01.c,Cereal grains nec
+Fonio,94,Cereal grains nec,Cereal grains nec,p01.c,Cereal grains nec
+Triticale,97,Cereal grains nec,Cereal grains nec,p01.c,Cereal grains nec
+Canary seed,101,Cereal grains nec,Cereal grains nec,p01.c,Cereal grains nec
+"Grain, mixed",103,Cereal grains nec,Cereal grains nec,p01.c,Cereal grains nec
+Cereals nes,108,Cereal grains nec,Cereal grains nec,p01.c,Cereal grains nec
+Coconuts,249,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Carobs,461,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Bananas,486,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Plantains and others,489,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Plantains,,,,,"Vegetables, fruit, nuts"
+Oranges,490,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Tangerines, mandarins, clementines, satsumas",495,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Lemons and limes,497,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Grapefruit (inc. pomelos),507,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Fruit, citrus nes",512,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Apples,515,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Pears,521,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Quinces,523,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Apricots,526,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Cherries, sour",530,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Cherries,531,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Peaches and nectarines,534,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Plums and sloes,536,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Fruit, stone nes",541,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Fruit, pome nes",542,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Strawberries,544,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Raspberries,547,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Gooseberries,549,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Currants,550,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Blueberries,552,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Cranberries,554,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Berries nes,558,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Grapes,560,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Figs,569,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Mangoes, mangosteens, guavas",571,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Avocados,572,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Pineapples,574,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Dates,577,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Persimmons,587,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Cashewapple,591,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Kiwi fruit,592,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Papayas,600,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Fruit, tropical fresh nes",603,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Fruit, fresh nes",619,Fruit,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Brazil nuts, with shell",216,Nuts,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Cashew nuts, with shell",217,Nuts,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Chestnut,220,Nuts,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Almonds, with shell",221,Nuts,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Walnuts, with shell",222,Nuts,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Pistachios,223,Nuts,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Kola nuts,224,Nuts,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Hazelnuts, with shell",225,Nuts,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Areca nuts,226,Nuts,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Nuts nes,234,Nuts,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Beans, dry",176,Pulses,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Broad beans, horse beans, dry",181,Pulses,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Peas, dry",187,Pulses,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Chick peas,191,Pulses,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Cow peas, dry",195,Pulses,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Pigeon peas,197,Pulses,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Lentils,201,Pulses,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Bambara beans,203,Pulses,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Vetches,205,Pulses,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Lupins,210,Pulses,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Pulses nes,211,Pulses,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Beans, green",414,Pulses,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+String beans,423,Pulses,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Potatoes,116,Roots and tubers,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Sweet potatoes,122,Roots and tubers,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Cassava,125,Roots and tubers,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Yautia (cocoyam),135,Roots and tubers,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Taro (cocoyam),136,Roots and tubers,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Yams,137,Roots and tubers,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Roots and tubers nes,149,Roots and tubers,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Olives,260,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Cabbages and other brassicas,358,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Artichokes,366,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Asparagus,367,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Lettuce and chicory,372,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Spinach,373,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Cassava leaves,378,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Tomatoes,388,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Cauliflowers and broccoli,393,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Pumpkins, squash and gourds",394,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Cucumbers and gherkins,397,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Eggplants (aubergines),399,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Chillies and peppers, green",401,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Onions, shallots, green",402,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Onions, dry",403,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Garlic,406,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Leeks, other alliaceous vegetables",407,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Peas, green",417,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Vegetables, leguminous nes",420,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Carrots and turnips,426,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Okra,430,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Maize, green",446,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Mushrooms and truffles,449,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Vegetables, fresh nes",463,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Watermelons,567,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+"Melons, other (inc.cantaloupes)",568,Vegetables,"Vegetables, fruit, nuts",p01.d,"Vegetables, fruit, nuts"
+Soybeans,236,Oil seeds,Oil seeds,p01.e,Soybeans
+"Groundnuts, with shell",242,Oil seeds,Oil seeds,p01.e,Oil seeds
+Oil palm fruit,254,Oil seeds,Oil seeds,p01.e,Palm oil
+"Oil, palm fruit",,,,,Palm oil
+Karite nuts (sheanuts),263,Oil seeds,Oil seeds,p01.e,Oil seeds
+Castor oil seed,265,Oil seeds,Oil seeds,p01.e,Oil seeds
+Sunflower seed,267,Oil seeds,Oil seeds,p01.e,Oil seeds
+Rapeseed,270,Oil seeds,Oil seeds,p01.e,Oil seeds
+Tung nuts,275,Oil seeds,Oil seeds,p01.e,Oil seeds
+Jojoba seed,277,Oil seeds,Oil seeds,p01.e,Oil seeds
+Safflower seed,280,Oil seeds,Oil seeds,p01.e,Oil seeds
+Sesame seed,289,Oil seeds,Oil seeds,p01.e,Oil seeds
+Mustard seed,292,Oil seeds,Oil seeds,p01.e,Oil seeds
+Poppy seed,296,Oil seeds,Oil seeds,p01.e,Oil seeds
+Melonseed,299,Oil seeds,Oil seeds,p01.e,Oil seeds
+Tallowtree seed,305,Oil seeds,Oil seeds,p01.e,Oil seeds
+Cottonseed,329,Oil seeds,Oil seeds,p01.e,Oil seeds
+Linseed,333,Oil seeds,Oil seeds,p01.e,Oil seeds
+Hempseed,336,Oil seeds,Oil seeds,p01.e,Oil seeds
+Oilseeds nes,339,Oil seeds,Oil seeds,p01.e,Oil seeds
+Sugar cane,156,"Sugar cane, sugar beet","Sugar cane, sugar beet",p01.f,Crops nec
+Sugar beet,157,"Sugar cane, sugar beet","Sugar cane, sugar beet",p01.f,Crops nec
+Sugar crops nes,161,"Sugar cane, sugar beet","Sugar cane, sugar beet",p01.f,Crops nec
+Cotton Lint,767,Plant-based fibers,Plant-based fibers,p01.g,Crops nec
+Flax fibre and tow,773,Plant-based fibers,Plant-based fibers,p01.g,Crops nec
+Hemp tow waste,777,Plant-based fibers,Plant-based fibers,p01.g,Crops nec
+Jute,780,Plant-based fibers,Plant-based fibers,p01.g,Crops nec
+"Bastfibres, other",782,Plant-based fibers,Plant-based fibers,p01.g,Crops nec
+Ramie,788,Plant-based fibers,Plant-based fibers,p01.g,Crops nec
+Sisal,789,Plant-based fibers,Plant-based fibers,p01.g,Crops nec
+Agave fibres nes,800,Plant-based fibers,Plant-based fibers,p01.g,Crops nec
+Manila fibre (abaca),809,Plant-based fibers,Plant-based fibers,p01.g,Crops nec
+Coir,813,Plant-based fibers,Plant-based fibers,p01.g,Crops nec
+Fibre crops nes,821,Plant-based fibers,Plant-based fibers,p01.g,Crops nec
+Chicory roots,459,Crops nec,Crops nec,p01.h,Crops nec
+"Coffee, green",656,Crops nec,Crops nec,p01.h,Crops nec
+"Cocoa, beans",661,Crops nec,Crops nec,p01.h,Crops nec
+Tea,667,Crops nec,Crops nec,p01.h,Crops nec
+Maté,671,Crops nec,Crops nec,p01.h,Crops nec
+Tea nes,674,Crops nec,Crops nec,p01.h,Crops nec
+Hops,677,Crops nec,Crops nec,p01.h,Crops nec
+Pepper (piper spp.),687,Crops nec,Crops nec,p01.h,Crops nec
+"Chillies and peppers, dry",689,Crops nec,Crops nec,p01.h,Crops nec
+Vanilla,692,Crops nec,Crops nec,p01.h,Crops nec
+Cinnamon (canella),693,Crops nec,Crops nec,p01.h,Crops nec
+Cloves,698,Crops nec,Crops nec,p01.h,Crops nec
+"Nutmeg, mace and cardamoms",702,Crops nec,Crops nec,p01.h,Crops nec
+"Anise, badian, fennel, coriander",711,Crops nec,Crops nec,p01.h,Crops nec
+Ginger,720,Crops nec,Crops nec,p01.h,Crops nec
+Spices nes,723,Crops nec,Crops nec,p01.h,Crops nec
+Peppermint,748,Crops nec,Crops nec,p01.h,Crops nec
+"Pyrethrum, dried",754,Crops nec,Crops nec,p01.h,Crops nec
+"Tobacco, unmanufactured",826,Crops nec,Crops nec,p01.h,Crops nec
+"Rubber, natural",836,Crops nec,Crops nec,p01.h,Crops nec
+"Forage and silage, maize",636,Fodder crops,Fodder crops,p01.i;p01.j;p01.k;p01.l;p01.n,div. animal sectors
+"Forage and silage, sorghum",637,Fodder crops,Fodder crops,p01.i;p01.j;p01.k;p01.l;p01.n,div. animal sectors
+"Forage and silage, rye grass",638,Fodder crops,Fodder crops,p01.i;p01.j;p01.k;p01.l;p01.n,div. animal sectors
+"Forage and silage, grasses nes",639,Fodder crops,Fodder crops,p01.i;p01.j;p01.k;p01.l;p01.n,div. animal sectors
+"Forage and silage, clover",640,Fodder crops,Fodder crops,p01.i;p01.j;p01.k;p01.l;p01.n,div. animal sectors
+"Forage and silage, alfalfa",641,Fodder crops,Fodder crops,p01.i;p01.j;p01.k;p01.l;p01.n,div. animal sectors
+"Forage and silage, green oilseeds",642,Fodder crops,Fodder crops,p01.i;p01.j;p01.k;p01.l;p01.n,div. animal sectors
+"Forage and silage, legumes",643,Fodder crops,Fodder crops,p01.i;p01.j;p01.k;p01.l;p01.n,div. animal sectors
+Cabbage for Fodder,644,Fodder crops,Fodder crops,p01.i;p01.j;p01.k;p01.l;p01.n,div. animal sectors
+Pumpkins for Fodder,645,Fodder crops,Fodder crops,p01.i;p01.j;p01.k;p01.l;p01.n,div. animal sectors
+Turnips for Fodder,646,Fodder crops,Fodder crops,p01.i;p01.j;p01.k;p01.l;p01.n,div. animal sectors
+Beets for Fodder,647,Fodder crops,Fodder crops,p01.i;p01.j;p01.k;p01.l;p01.n,div. animal sectors
+Carrots for Fodder,648,Fodder crops,Fodder crops,p01.i;p01.j;p01.k;p01.l;p01.n,div. animal sectors
+Swedes for Fodder,649,Fodder crops,Fodder crops,p01.i;p01.j;p01.k;p01.l;p01.n,div. animal sectors
+Forage Products,651,Fodder crops,Fodder crops,p01.i;p01.j;p01.k;p01.l;p01.n,div. animal sectors
+Vegetables and roots fodder,655,Fodder crops,Fodder crops,p01.i;p01.j;p01.k;p01.l;p01.n,div. animal sectors
+Grazing,n.a.,Grazing,Grazing,p01.i;p01.l;p01.n,div. animal sectors
+Straw,n.a.,Straw,Crop residues,p01.i;p01.l;p01.n,div. animal sectors
+Other crop residues,n.a.,Other crop residues,Crop residues,p01.i;p01.l;p01.n,div. animal sectors
+Kapok fruit,310,Forestry products,Forestry products,p02,Crops nec
+"Gums, natural",839,Forestry products,Forestry products,p02,Crops nec
+Seed cotton,328,n.a.,n.a.,n.a.,Oil seeds
+Cattle meat,,,,,Beef cattle
+Beef and buffalo meat,,,,,Beef cattle
+Leather,,,,,Beef cattle
+Guarana,,,,,Crops nec
+MatÃ©,,,,,Crops nec
+Sugar raw centrifugal,,,,,Crops nec
