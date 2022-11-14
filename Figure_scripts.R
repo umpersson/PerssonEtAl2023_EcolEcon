@@ -9,7 +9,7 @@ library(readxl)
 
 # LOAD & PREPARE DATA ##########################################################
 
-Kastner_trade <- read.csv("C:/Users/mpersson/Box/Land-balance & deforestation emissions model/Output/Zenodo/Version 1.1/Kastner_sheet.csv", sep = ",", stringsAsFactors = FALSE) # Loads data on bilateral trade flows of embodied deforestation from Pendrill et al. (2022)
+Def_attrib <- read.csv("Deforestation_attribution_sheet.csv", sep = ",", stringsAsFactors = FALSE) # Loads data on deforestation attribution to commodities from Pendrill et al. (2022)
 Crop_groups <- read_excel("C:/Users/mpersson/Box/My folders/Trade & environment/Changing landscape - EE Special Issue '22/R script & output/Lookup_tables.xlsx", sheet = "Crops_lookup")
 Country_groups <- read_excel("C:/Users/mpersson/Box/My folders/Trade & environment/Changing landscape - EE Special Issue '22/R script & output//Lookup_tables.xlsx", sheet = "Country_lookup")
 
@@ -17,8 +17,8 @@ Country_groups <- read_excel("C:/Users/mpersson/Box/My folders/Trade & environme
 # Create a dataframe with domestic & export volumes, export shares, by country, commodity group & year
 Dom_exp_shares <- select(Kastner_trade, ProducerCountry, ConsumerCountry, FAO_name, Year, Deforestation_Area) %>%
   mutate(ConsumerCountry = ifelse(ProducerCountry == ConsumerCountry, "Domestic", "Export")) %>%
-  left_join(., select(Crop_groups, FAO_name, Crop_group), by = "FAO_name") %>%
-  group_by(ProducerCountry, Crop_group, ConsumerCountry, Year) %>%
+  left_join(., select(Crop_groups, FAO_name, CropGroup), by = "FAO_name") %>%
+  group_by(ProducerCountry, CropGroup, ConsumerCountry, Year) %>%
   summarise(Deforestation_Area = sum(Deforestation_Area)) %>%
   pivot_wider(., names_from = ConsumerCountry, values_from = Deforestation_Area) %>%
   mutate(Export = ifelse(is.na(Export), 0, Export)) %>%
@@ -55,3 +55,4 @@ Imp_volumes <- select(Kastner_trade, ProducerCountry, ConsumerCountry, FAO_name,
   ungroup()
 
 # VISUALIZATIONS ###############################################################
+
