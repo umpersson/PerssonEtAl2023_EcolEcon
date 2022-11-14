@@ -1,19 +1,11 @@
-library(tidyr)
-library(dplyr)
-library(ggplot2)
-library(ggmosaic)
-library(ggrepel)
-library(RColorBrewer)
-library(viridis)
-library(readxl)
-
 # LOAD & PREPARE DATA ##########################################################
 
 Def_attrib <- read.csv("Deforestation_attribution_sheet.csv", sep = ",", stringsAsFactors = FALSE) # Loads data on deforestation attribution to commodities from Pendrill et al. (2022)
 Kastner_trade <- read.csv("Kastner_sheet.csv", sep = ",", stringsAsFactors = FALSE)                # Loads data on bilateral trade flows of embodied deforestation from Pendrill et al. (2022)
 Crop_groups <- read.csv("Crop_lookup.csv", sep = ",", stringsAsFactors = FALSE)                    # Loads data key to summarize individual crop data into aggregate crop groups
-Country_groups <- read.csv("Crop_lookup.csv", sep = ",", stringsAsFactors = FALSE)                 # Loads data key to summarize individual country data into aggregate regions
+Country_groups <- read.csv("Country_lookup.csv", sep = ",", stringsAsFactors = FALSE)                 # Loads data key to summarize individual country data into aggregate regions
 
+# Create a dataframe with the share of 2018 harvested area 
 
 # Create a dataframe with domestic & export volumes, export shares, by country, commodity group & year
 Dom_exp_shares <- select(Kastner_trade, ProducerCountry, ConsumerCountry, FAO_name, Year, Deforestation_Area) %>%
