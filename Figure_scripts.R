@@ -8,16 +8,19 @@ Country_groups <- read.csv("Country_lookup.csv", sep = ",", stringsAsFactors = F
 
 # Create a dataframe with the share of 2018 harvested area 
 Area_shares <- select(Def_attrib, ISO, Commodity, Year, Def_attr_ha) %>%
-  filter(Commodity != "Forest plantation") %>%
+  filter(Commodity != "Forest plantation" & Commodity != "Leather") %>%
+  mutate(Def_attr_ha = ifelse(Commodity == "Cattle meat", Def_attr_ha / 0.95, Def_attr_ha)) %>%
   group_by(ISO, Commodity) %>%
-  mutate (CumDef = rev(cumsum(rev(Def_attr_ha)))) %>% # Calculate the cumulative sum of deforestation in reveres order - i.e., the amount of land use for a given commodity deforested before a given year
+  mutate (CumDef = rev(cumsum(rev(Def_attr_ha)))) %>%                                                   # Calculate the cumulative sum of deforestation in reveres order - i.e., the amount of land use for a given commodity deforested before a given year
   ungroup() %>%
   left_join(., select(LU_area_data, ISO, Item, Value), by = c("ISO" = "ISO", "Commodity" = "Item")) %>%
+  na.omit() %>%                                                                                         # TODO: include subnational data for Brazil & Indonesia! Now NA for missing data in FAOSTAT for Indonesia at least 
   left_join(., select(Crop_groups, FAO_name, CropGroup), by = c("Commodity" = "FAO_name")) %>%
   select(ISO, CropGroup, Year, CumDef, Value) %>%
   group_by(ISO, CropGroup, Year) %>%
-  summarise_all(sum, na.rm = TRUE) %>%
-  mutate(DefShare = CumDef / Value)
+  summarise_all(sum, na.rm = TRUE) %>%                                                                  # By aggregating by major crop groups, one avoids the problem of cumulative deforestation area exceeding 2018 harvetsed area, which may result from yearly fluctuations in harvetsed areas for some crops (usually small areas)
+  mutate(DefShare = pmin(CumDef / Value, 1)) %>%
+  ungroup()
 
 # Create a dataframe with domestic & export volumes, export shares, by country, commodity group & year
 Dom_exp_shares <- select(Kastner_trade, ProducerCountry, ConsumerCountry, FAO_name, Year, Deforestation_Area) %>%
@@ -60,4 +63,42 @@ Imp_volumes <- select(Kastner_trade, ProducerCountry, ConsumerCountry, FAO_name,
   ungroup()
 
 # VISUALIZATIONS ###############################################################
+
+## Share of production on recently deforested land, by cut-off date ############
+
+MaxCumDef <- max(CumDef)
+
+Area_shares_viz <- Area_shares %>%
+  mutate(Year = as.character(Year)) %>% # Needed for the boxplot
+  mutate(LineOp = 0.7 * CumDef / max(CumDef))
+
+# Line- & boxplot, with share of prod on recently deforested land, by country & commodity group
+ggplot(data = Area_shares_viz) + 
+  geom_line(aes(x = Year, y = DefShare,
+                group = interaction(ISO, CropGroup),
+                color = LineOp,
+                alpha = LineOp)
+            ) +
+  scale_color_gradient(low = "slategray2", high = "firebrick") +
+  geom_boxplot(aes(x = Year, y = DefShare),
+               fill = NA,
+               outlier.shape = NA
+               ) +
+  scale_x_discrete(limits = rev)
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
